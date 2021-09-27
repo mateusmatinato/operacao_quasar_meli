@@ -1,13 +1,26 @@
 # Operação Quasar - Teste MeLi
 
-### Requisitos:
-- Java 11 instalado e configurado
+### Executando com maven:
+#### Requisitos:
+* Java 11 instalado e configurado
+* Maven instalado e configurado
   
-### Passo a passo para executar:
+#### Passo a passo para executar:
 * Clonar o repositório
 * Executar o comando: mvn clean install
 * Executar o comando mvn spring-boot:run
 * Utilizar a collection na pasta /postman: Quasar Meli
+
+### Executando com docker:
+#### Requisitos:
+* Docker instalado
+
+#### Passo a passo:
+* Na pasta do projeto, abra o terminal
+* Rode o comando docker build -t teste-meli-operacao-quasar .
+* Aguarde o build da imagem do projeto
+* Rode o comando docker run -dp 8080:8080 teste-meli-operacao-quasar
+* Execute os testes com a collection da pasta /postman: Quasar Meli
 
 ### Observações para descoberta da mensagem do emissor:
 * O algoritmo irá percorrer a mensagem recebida em cada satélite e, caso seja diferente de um espaço em branco, preenche em um vetor de strings. Caso no final da iteração ainda exista espaços em branco no vetor, será disparada uma exceção de que não foi possível decifrar a mensagem.
@@ -39,6 +52,6 @@
 * A aplicação está rodando em uma instância EC2 na AWS.
 
 ### TODO:
-* Testes Unitários [] - Não obrigatório
-* Criação da imagem docker [] - Não obrigatório
+* Testes Unitários [x] 
+* Criação da imagem docker [x] 
 * Criação da infraestrutura como código (terraform) [] - Não obrigatório
