@@ -37,3 +37,8 @@
 * http://ec2-15-228-49-205.sa-east-1.compute.amazonaws.com:8080
 * Collection na pasta /postman: Quasar Meli - AWS
 * A aplicação está rodando em uma instância EC2 na AWS.
+
+### TODO:
+* Testes Unitários [] - Não obrigatório
+* Criação da imagem docker [] - Não obrigatório
+* Criação da infraestrutura como código (terraform) [] - Não obrigatório
