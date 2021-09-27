@@ -29,6 +29,10 @@
 
 * Caso ocorra alguma exceção, por falta de informações dos satélites ou falha no cálculo, será disparada uma exceção de que não foi possível calcular a posição do emissor.
 
+### Outras observações:
+* Além dos endpoints solicitados na documentação do teste, foi adicionado um endpoint /topscret_split/ com o método PATCH, para limpar as informações enviadas sobre os satélites.
+* Qualquer cenário que não seja possível calcular a localização ou a mensagem, irá retornar um erro 404.
+
 ### URL para testes na AWS:
 * http://ec2-15-228-49-205.sa-east-1.compute.amazonaws.com:8080
 * Collection na pasta /postman: Quasar Meli - AWS
